@@ -1,0 +1,33 @@
+<?php
+echo "<h1>Borma Cibaduyut</h1><br>";
+echo "<p>Sistem penggajihan berdasarkan golongan karyawan</p>";
+    if(isset($_POST['proses'])){
+        $jam = $_POST['jam'];
+
+        echo "Jumlah Jam Kerja : $jam Jam<br>";
+    }
+    if(isset($_POST['A'])){
+        $gaji = 4000 * $jam;
+        echo "Golongan Kerja = A <br>";
+        echo "Gaji Yang Diterima = Rp.$gaji";    
+     }
+
+        elseif(isset($_POST['B'])){
+            $gaji = 5000 * $jam;
+            echo "Golongan Kerja = B <br>";
+            echo "Gaji Yang Diterima = Rp.$gaji";
+            
+         }
+         elseif(isset($_POST['C'])){
+            $gaji = 6000 * $jam;
+            echo "Golongan Kerja = C <br>";
+            echo "Gaji Yang Diterima = Rp.$gaji";
+            
+         }
+         elseif(isset($_POST['D'])){
+            $gaji = 7000 * $jam;
+            echo "Golongan Kerja = D <br>";
+            echo "Gaji Yang Diterima = Rp.$gaji";
+            
+         }
+    ?>
