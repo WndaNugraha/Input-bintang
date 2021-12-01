@@ -1,0 +1,63 @@
+<?php
+$bintang = 10;
+
+//Bintang Siku Biasa
+for($a = $bintang ; $a > 0; $a--){
+        for($b=$bintang; $b >$a; $b--){
+            echo "*";
+        }
+        echo "<br>";
+}
+//Segitiga Siku-Siku Terbalik
+echo "<br>";
+for($a = $bintang; $a > 0; $a--){
+    for($b= 0; $b < $a; $b++){
+        echo "*";
+    }
+        echo "<br>";
+}
+//Segitiga Siku-Siku
+for($a = $bintang; $a > 0; $a--){
+    for($b= 0; $b < $a; $b++){
+        echo " &nbsp";
+    }
+    for($c =$bintang; $c > $b; $c--){
+        echo "*";
+    }
+        echo "<br>";
+}
+//Segitiga Siku-Siku
+echo "<br>";
+for($a = $bintang; $a > 0; $a--){
+    for($b= $bintang; $b > $a; $b--){
+        echo " &nbsp";
+    }
+    for($c =0; $c < $b; $c++){
+        echo "*";
+    }
+        echo "<br>";
+}
+//Segitiga Sempurna Terbalik
+echo "<br>";
+for($a = $bintang; $a > 0; $a--){
+    for($b= $bintang; $b > $a; $b--){
+        echo "&nbsp";
+    }
+    for($c =0; $c < $b; $c++){
+        echo "*";
+    }
+        echo "<br>";
+}
+//Segitiga Sempurna
+echo "<br>";
+for($a = $bintang; $a > 0; $a--){
+    for($b= 0; $b < $a; $b++){
+        echo "&nbsp";
+    }
+    for($c =$bintang; $c > $b; $c--){
+        echo "*";
+    }
+        echo "<br>";
+}
+
+?>
