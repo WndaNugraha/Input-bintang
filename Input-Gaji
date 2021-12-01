@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gaji</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+  </head>
+  <body>
+  
+  <h1>Borma Cibaduyut</h1>
+    <h4>Sistem penggajihan berdasarkan golongan karyawan</h4>
+    <form action="Gaji2.php" method="POST">
+    <div class="gaji"> 
+        <br> 
+        jumlah Jam Kerja
+        <br>
+        <input type="number" name="jam" placeholder="Masukan Jumlah Jam kerja" class="jam">
+         <br/>
+        Golongan Kerja
+        <br>
+        <input type="radio" name="A" value="A">A
+        <input type="radio" name="B" value="B">B
+        <input type="radio" name="C" value="C">C
+        <input type="radio" name="D" value="D">D
+         <br/>
+        <input type="submit"  name="proses" value="Kirim" class="tombol">
+        </div>
+            
+    </form>
+    </body>
+</html>
